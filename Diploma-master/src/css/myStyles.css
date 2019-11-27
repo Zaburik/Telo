@@ -1,0 +1,177 @@
+div.modal_support_active {
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+
+.closed_support_modal {
+	min-width: 500px;
+	opacity: 0;
+	transform: translate(0, -50%) scale(0);
+	display: block;
+	position: fixed;
+	left: -100%;
+	top: 50%;
+	z-index: 100;
+	transition: .5s ease-in-out;
+}
+
+.closed_offer_modal {
+	min-width: 500px;
+	opacity: 0;
+	transform: translate(0, -50%) scale(0);
+	display: block;
+	position: fixed;
+	left: 100%;
+	top: 50%;
+	z-index: 100;
+	transition: .5s ease-in-out;
+}
+
+/* Стили для слайдера с отзывами клиентов */
+#ten {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#client-slider {
+	position: relative;
+	width: 300%;
+	transition: 0.8s;
+	display: flex;
+}
+
+.btn-slider-client {
+	position: absolute;
+	z-index: 10;
+	display: block;
+	border: none;
+	background: transparent;
+	width: 25px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.btn-client-right {
+	right: 10%;
+	background: url('../img/Block10/arrowright.png') no-repeat center center;
+}
+
+.btn-client-left {
+	left: 10%;
+	background: url('../img/Block10/arrowleft.png') no-repeat center center;
+}
+
+.sl2-slide {
+	width: 100%;
+}
+
+/* Аккордион */
+.accordion-item {
+	position: relative;
+	opacity: 1;
+	/* height: 100%; */
+	max-height: 0px;
+	display: block;
+	overflow: hidden;
+	transition: .4s ease-out;
+}
+
+/* Слайдер с партнерами */
+
+.sl-slide {
+	transition: 0.5s;
+	min-width: 140px;
+	max-width: 140px;
+	margin: 0;
+}
+
+.sl-container {
+	margin: 0 auto;
+	width: 840px;
+	overflow: hidden;
+}
+
+
+@media (max-width: 1200px) {
+	
+	.sl-container {
+		width: 720px;
+	}
+
+
+	.sl-slide {
+		min-width: 120px;
+		max-width: 120px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 992px) {
+
+	
+	.sl-container {
+		width: 570px;
+	}
+
+	.sl-slide {
+		min-width: 95px;
+		max-width: 95px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.sl-container {
+		width: 390px;
+	}
+
+	.sl-slide {
+		min-width: 130px;
+		max-width: 130px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.sl-container {
+		width: 300px;
+	}
+	
+	.sl-slide {
+		min-width: 100px;
+		max-width: 100px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.sl-container {
+		width: 210px;
+	}
+
+	.sl-slide {
+		min-width: 70px;
+		max-width: 70px;
+		margin: 0;
+	}
+}
+
+.sl {
+	display: flex;
+	transition: 0.8s;
+	width: 100%;
+}
+
+.btn-partner-right {
+	right: 10%;
+	background: url('../img/Block10/arrowright.png') no-repeat center center;
+}
+
+.btn-partner-left {
+	left: 10%;
+	background: url('../img/Block10/arrowleft.png') no-repeat center center;
+}
